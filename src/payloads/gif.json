@@ -1,0 +1,43 @@
+{
+  "blocks": [
+    {
+      "type": "image",
+      "image_url": "",
+      "alt_text": "inspiration"
+    },
+    {
+      "type": "actions",
+      "elements": [
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "emoji": true,
+            "text": "Send"
+          },
+          "style": "primary",
+          "action_id": "action-gif-send"
+        },
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "emoji": true,
+            "text": "Shuffle"
+          },
+          "action_id": "action-gif-shuffle"
+        },
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "emoji": true,
+            "text": "Cancel"
+          },
+          "style": "danger",
+          "action_id": "action-gif-cancel"
+        }
+      ]
+    }
+  ]
+}
