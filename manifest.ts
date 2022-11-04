@@ -8,9 +8,11 @@ import GreetingWorkflow from "./workflows/greeting_workflow.ts";
  */
 export default Manifest({
   name: "cog",
+  displayName: "Cog",
   description: "The gear that keeps SC2 moving",
-  icon: "assets/default_new_app_icon.png",
+  icon: "assets/logo.png",
   workflows: [GreetingWorkflow],
   outgoingDomains: [],
   botScopes: ["commands", "chat:write", "chat:write.public"],
+  backgroundColor: "#4B5563",
 });
