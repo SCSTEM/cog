@@ -1,18 +1,18 @@
 import { Manifest } from "deno-slack-sdk/mod.ts";
-import GreetingWorkflow from "./workflows/greeting_workflow.ts";
+import CollectHoursWorkflow from "./workflows/collect_hours.ts";
+import GoogleProvider from "./external_auth/google_provider.ts";
 
 /**
  * The app manifest contains the app's configuration. This
  * file defines attributes like app name and description.
- * https://api.slack.com/future/manifest
+ * https://api.slack.com/automation/manifest
  */
 export default Manifest({
-  name: "cog",
-  displayName: "Cog",
-  description: "The gear that keeps SC2 moving",
-  icon: "assets/logo.png",
-  workflows: [GreetingWorkflow],
-  outgoingDomains: [],
-  botScopes: ["commands", "chat:write", "chat:write.public"],
-  backgroundColor: "#4B5563",
+  name: "slack-app-1",
+  description: "A form for collecting hours worked",
+  icon: "assets/default_new_app_icon.png",
+  workflows: [CollectHoursWorkflow],
+  externalAuthProviders: [GoogleProvider],
+  outgoingDomains: ["sheets.googleapis.com"],
+  botScopes: ["commands"],
 });
