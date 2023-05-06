@@ -1,10 +1,8 @@
 name: Deno app build and testing
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   deno:
