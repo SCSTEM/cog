@@ -8,9 +8,9 @@ import GoogleProvider from "./external_auth/google_provider.ts";
  * https://api.slack.com/automation/manifest
  */
 export default Manifest({
-  name: "slack-app-1",
-  description: "A form for collecting hours worked",
-  icon: "assets/default_new_app_icon.png",
+  name: "Cog",
+  description: "The gear that keeps SC2 moving",
+  icon: "assets/sc2-logo.png",
   workflows: [CollectHoursWorkflow],
   externalAuthProviders: [GoogleProvider],
   outgoingDomains: ["sheets.googleapis.com"],
