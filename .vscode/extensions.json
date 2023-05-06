@@ -2,7 +2,6 @@
   "recommendations": [
     "denoland.vscode-deno",
     "mikestead.dotenv",
-    "yoavbls.pretty-ts-errors",
-    "esbenp.prettier-vscode"
+    "yoavbls.pretty-ts-errors"
   ]
 }
