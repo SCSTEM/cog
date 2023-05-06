@@ -1,0 +1,10 @@
+{
+  "apps": {
+    "scstem": {
+      "name": "scstem",
+      "app_id": "A049YRY8K5F",
+      "team_id": "T01NLBYN9SS"
+    }
+  },
+  "default": "scstem"
+}
